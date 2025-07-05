@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTSPLY 2.0 - Официальный сайт</title>
+    <style>
+        :root {
+            --primary: #FF0000;
+            --secondary: #282828;
+            --accent: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .channel-info {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .link-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #cc0000;
+        }
+        
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-link:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">YTSPLY 2.0</div>
+            <div class="tagline">Официальный сайт YouTube-канала</div>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="channel-info">
+                <h2>Добро пожаловать на официальный сайт канала YTSPLY 2.0!</h2>
+                <p>Здесь вы найдете все актуальные ссылки на наши соцсети и способы связи. Подписывайтесь, чтобы не пропустить новые видео!</p>
+            </div>
+            
+            <div class="links">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="link-title">Наш YouTube-канал</h3>
+                    <p>Подпишитесь на наш канал, чтобы первыми видеть новые видео</p>
+                    <a href="https://youtube.com/@YTSPLY2.0" class="btn" target="_blank">Перейти на YouTube</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="link-title">Наш Telegram</h3>
+                    <p>Присоединяйтесь к нашему Telegram-каналу для общения</p>
+                    <a href="https://t.me/yourtelegram" class="btn" target="_blank">Перейти в Telegram</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="link-title">Связь по телефону</h3>
+                    <p>Для сотрудничества и предложений</p>
+                    <a href="tel:+79207022233" class="btn">+7 (920) 702-22-33</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="link-title">Email для связи</h3>
+                    <p>Пишите нам на почту по любым вопросам</p>
+                    <a href="mailto:fivenatafradi@gmail.com" class="btn">fivenatafradi@gmail.com</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <h3 class="link-title">Группа ВКонтакте</h3>
+                    <p>Наше сообщество в ВК с дополнительным контентом</p>
+                    <a href="https://vk.com/rartamonov2024" class="btn" target="_blank">Перейти в ВК</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 YTSPLY 2.0. Все права защищены.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@YTSPLY2.0" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/yourtelegram" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://vk.com/rartamonov2024" class="social-link" target="_blank"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTSPLY 2.0 - Официальный сайт</title>
+    <style>
+        :root {
+            --primary: #FF0000;
+            --secondary: #282828;
+            --accent: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .channel-info {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .link-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #cc0000;
+        }
+        
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-link:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">YTSPLY 2.0</div>
+            <div class="tagline">Официальный сайт YouTube-канала</div>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="channel-info">
+                <h2>Добро пожаловать на официальный сайт канала YTSPLY 2.0!</h2>
+                <p>Здесь вы найдете все актуальные ссылки на наши соцсети и способы связи. Подписывайтесь, чтобы не пропустить новые видео!</p>
+            </div>
+            
+            <div class="links">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="link-title">Наш YouTube-канал</h3>
+                    <p>Подпишитесь на наш канал, чтобы первыми видеть новые видео</p>
+                    <a href="https://youtube.com/@YTSPLY2.0" class="btn" target="_blank">Перейти на YouTube</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="link-title">Наш Telegram</h3>
+                    <p>Присоединяйтесь к нашему Telegram-каналу для общения</p>
+                    <a href="https://t.me/yourtelegram" class="btn" target="_blank">Перейти в Telegram</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="link-title">Связь по телефону</h3>
+                    <p>Для сотрудничества и предложений</p>
+                    <a href="tel:+79207022233" class="btn">+7 (920) 702-22-33</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="link-title">Email для связи</h3>
+                    <p>Пишите нам на почту по любым вопросам</p>
+                    <a href="mailto:fivenatafradi@gmail.com" class="btn">fivenatafradi@gmail.com</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <h3 class="link-title">Группа ВКонтакте</h3>
+                    <p>Наше сообщество в ВК с дополнительным контентом</p>
+                    <a href="https://vk.com/rartamonov2024" class="btn" target="_blank">Перейти в ВК</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 YTSPLY 2.0. Все права защищены.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@YTSPLY2.0" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/yourtelegram" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://vk.com/rartamonov2024" class="social-link" target="_blank"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YTSPLY 2.0 - Официальный сайт</title>
+    <style>
+        :root {
+            --primary: #FF0000;
+            --secondary: #282828;
+            --accent: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: var(--secondary);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .tagline {
+            font-size: 1.2rem;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .main-content {
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .channel-info {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+        
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .link-card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+        
+        .link-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .link-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        
+        .link-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #cc0000;
+        }
+        
+        footer {
+            background: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            color: white;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-link:hover {
+            color: var(--primary);
+        }
+        
+        @media (max-width: 768px) {
+            .links {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">YTSPLY 2.0</div>
+            <div class="tagline">Официальный сайт YouTube-канала</div>
+        </div>
+    </header>
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="channel-info">
+                <h2>Добро пожаловать на официальный сайт канала YTSPLY 2.0!</h2>
+                <p>Здесь вы найдете все актуальные ссылки на наши соцсети и способы связи. Подписывайтесь, чтобы не пропустить новые видео!</p>
+            </div>
+            
+            <div class="links">
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="link-title">Наш YouTube-канал</h3>
+                    <p>Подпишитесь на наш канал, чтобы первыми видеть новые видео</p>
+                    <a href="https://youtube.com/@YTSPLY2.0" class="btn" target="_blank">Перейти на YouTube</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="link-title">Наш Telegram</h3>
+                    <p>Присоединяйтесь к нашему Telegram-каналу для общения</p>
+                    <a href="https://t.me/yourtelegram" class="btn" target="_blank">Перейти в Telegram</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="link-title">Связь по телефону</h3>
+                    <p>Для сотрудничества и предложений</p>
+                    <a href="tel:+79207022233" class="btn">+7 (920) 702-22-33</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="link-title">Email для связи</h3>
+                    <p>Пишите нам на почту по любым вопросам</p>
+                    <a href="mailto:fivenatafradi@gmail.com" class="btn">fivenatafradi@gmail.com</a>
+                </div>
+                
+                <div class="link-card">
+                    <div class="link-icon">
+                        <i class="fab fa-vk"></i>
+                    </div>
+                    <h3 class="link-title">Группа ВКонтакте</h3>
+                    <p>Наше сообщество в ВК с дополнительным контентом</p>
+                    <a href="https://vk.com/rartamonov2024" class="btn" target="_blank">Перейти в ВК</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 YTSPLY 2.0. Все права защищены.</p>
+            <div class="social-links">
+                <a href="https://youtube.com/@YTSPLY2.0" class="social-link" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://t.me/yourtelegram" class="social-link" target="_blank"><i class="fab fa-telegram"></i></a>
+                <a href="https://vk.com/rartamonov2024" class="social-link" target="_blank"><i class="fab fa-vk"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
